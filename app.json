@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "financetracker",
+    "slug": "financetracker",
+    "privacy": "public",
+    "platforms": ["ios", "android"],
+    "scheme": "com.vinay1025.financetracker", 
+    "android": {
+      "package": "com.vinay1025.financetracker",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": {
+            "scheme": "com.vinay1025.financetracker",
+            "host": "oauth2redirect",
+            "pathPrefix": "/google"
+          },
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": ["expo-router"],
+    "extra": {
+      "eas": {
+        "projectId": "b72dbdfe-49a4-4401-bb2d-f64eefb10d42"
+      }
+    }
+  }
+}
